@@ -15,6 +15,13 @@
 
 /*utilidades*/
 
+section {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem 1.5rem;
+}
+
 .btn{
     background-color: var(--clr-primary);
     width: fit-content;
@@ -35,6 +42,14 @@
 
 .w-100{
     width: 100%;
+}
+
+section >h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+
+    text-transform: uppercase;
 }
 
 header{
@@ -72,13 +87,11 @@ header h1 {
 /*home*/
 
 #home {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     
     height: 700px;
     
-    padding-inline: 1rem;
+    padding-inline: 0rem;
 }
 
 .home-cta {
@@ -122,18 +135,8 @@ header h1 {
     flex-direction: column;
     gap: 1rem;
 
-    padding: 2rem 1.5rem;
-
     background-color: var(--clr-black);
     color: var(--clr-white);
-}
-
-#sobre >h2 {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 150%;
-
-    text-transform: uppercase;
 }
 
 .sobre-links{
@@ -143,9 +146,146 @@ header h1 {
     gap: 1.5rem;
 }
 
-.imagem-pessoa {
-    width: 250px;
+.imagem-eu {
+    width: 100%;
     height: auto;
 
     border-radius: 4px;
+}
+
+/*projetos*/
+
+#projetos {
+
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    padding: 1.25rem;
+    border-radius: 4px;
+}
+
+.card >img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.cord h3 > {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*serviços e conhecimentos*/
+
+#servicos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+
+}
+
+.base-list {
+    display:flex ;
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+.base-list > li {
+    background-color: var(--clr-primary);
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.s-list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.c-list {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/*contato*/
+
+#contato {
+    gap: 3rem;
+    padding-block: 4rem;
+}
+
+#contato >h2 {
+    margin: 0;
+}
+
+#contato >ul {
+    flex-direction: column;
+    display: flex;
+    gap: 0.75rem;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+#contato > ul > li {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#contato a {
+    color: var(--clr-black);
+    text-decoration: none;
+}
+
+#contato >cite {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+
+    text-transform: uppercase;
+}
+
+/*footer*/
+
+footer {
+    background-color: var(--clr-primary);
+
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    color: var(--clr-black);
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 300;
+}
+
+footer img {
+    height: 24px;
+    padding-block: 1.5rem;
 }
