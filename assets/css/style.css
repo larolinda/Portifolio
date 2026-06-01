@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-
 :root{
     --clr-primary :  #E02D2D;
     --clr-black : #191919;
@@ -67,7 +66,7 @@ header{
 }
 
 header nav {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 1.5rem;
 }
@@ -77,6 +76,12 @@ header nav a {
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
+}
+
+@media screen and (min-width: 1024px){
+   header nav {
+        display: flex;
+   }
 }
 
 header h1 {
@@ -107,12 +112,20 @@ header h1 {
 }
 
 
+#home > img{
+    display:none;
+
+}
+
+
 
 
 .home-heading {
     flex-direction: column;
     display: flex;
 }
+
+
 
 .home-heading >h1 {
     font-size: 24px;
@@ -128,6 +141,26 @@ header h1 {
     margin: 0%;
 }
 
+@media screen and (min-width: 1024px){
+#home{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+    #home > img {
+        display: block;
+
+        width: 444px;
+        height: 444px;
+    } 
+    .home-cta{
+        background: none;
+    }
+}
+
+
 /*sobre*/
 
 #sobre {
@@ -139,12 +172,30 @@ header h1 {
     color: var(--clr-white);
 }
 
+.mobile-sobre > img{
+    border-radius: 12px;
+}
+
+
+
+
 .sobre-links{
     display: flex;
     justify-content: space-between;
 
     gap: 1.5rem;
 }
+
+.desktop-sobre{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .mobile-sobre{
+        display: none;
+    }
+}
+
 
 .imagem-eu {
     width: 100%;
@@ -289,3 +340,4 @@ footer img {
     height: 24px;
     padding-block: 1.5rem;
 }
+
